@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Responsiva</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Aprendendo Programação</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4 text-center">
+
+        <section>
+            <h2 class="text-warning">JavaScript</h2>
+            <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.</p>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="text-primary">CSS</h2>
+            <p>CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense na decoração da sua página.</p>
+        </section>
+
+        <section class="mt-4">
+            <h2 class="text-danger">HTML</h2>
+            <p>HTML não é uma linguagem de programação, mas tem em comum com estas a presença de diretivas, isto é trechos especiais de texto, geralmente destacados por algum caracter delimitador. São tais diretivas que controlam ou alteram a maneira em que as diversas partes de um documento são apresentadas tipograficamente.</p>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-2 mt-4">
+        &copy; <span id="anoAtual"></span> Feito por Yuri Silveira
+    </footer>
+
+    
+
+    <script>
+        document.getElementById('anoAtual').innerText = new Date().getFullYear();
+    </script>
+</body>
+</html>
